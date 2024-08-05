@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Maaz Khan Portfolio</title>
@@ -18,30 +13,83 @@
 			<header id="header">
 				<div class="inner">
 					<a href="https://www.linkedin.com/in/maazk337/" class="image avatar"><img src="/images/maazavatar.jpg" alt="" /></a>
-					<h1><strong>I am Maaz Khan</strong>, a Software Engineer and Third year 
-					 Computer Science Student. </h1>
+					<h1><strong>I am Maaz Khan</strong>, a Software Engineer and third year 
+					 computer science student. </h1>
 				</div>
 			</header>
 
 		<!-- Main -->
 			<div id="main">
 
-				<!-- One -->
+				<nav class="navbar">
+					<ul id="sidebar"> 
+					    <li onclick=closeSidebar()> <a href="#"><svg class="close-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>		
+						<li> <a href="#one">Intro</a> </li>
+						<li> <a href="#education">Education</a> </li>
+						<li> <a href="#two">Projects</a> </li>
+						<li> <a href="#skills">Skills</a> </li>
+						<li> <a href="#three">Contact</a></li>
+						
+					</ul>
+					<ul id="nav-ul"> 
+						<li class="hideOnMobile"> <a href="#one">Intro</a> </li>
+						<li class="hideOnMobile"> <a href="#education">Education</a> </li>
+						<li class="hideOnMobile"> <a href="#two">Projects</a> </li>
+						<li class="hideOnMobile"> <a href="#skills">Skills</a> </li>
+						<li class="hideOnMobile"> <a href="#three">Contact</a></li>
+						<li class="menu-button" onclick=showSidebar()><a href="#"><svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+					</ul>
+				</nav>
+
+				<!-- One: About Me -->
 					<section id="one">
 						<header class="major">
 							<h2>About Me</h2>
 						</header>
 						<p>Hello, I am Maaz Khan! I'm a junior at Farmingdale State College, currently pursuing a degree in Computer Science. My goal is to become a skilled software engineer, and I am passionate about creating innovative solutions that enhance user experiences.
-
 							I have experience in programming with Java, C++, and web development using HTML, CSS, and JavaScript. I am actively working on expanding my skills through projects and courses, including The Odin Project. My portfolio showcases a variety of projects, from financial education apps to other websites, demonstrating my dedication to continuous learning and improvement.</p>
 						<ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
 						</ul>
 					</section>
 
-				<!-- Two -->
+
+				<!--Education-->
+				<section id="education">
+				<h2>Education</h2>	
+				<h3>Farmingdale State College</h3>
+				<p>Major: Computer Science</p>
+				<p>Expected: May 2026</p>
+				<img id="farmingdale-logo" src="/images/sunyfarmingdale.png" alt="Logo of Farmingdale State College" height="200px" width="200px">
+			
+				
+			</section>
+				
+
+		<!--Skills-->
+		<section id="skills" class="skills-section">
+			<h2>Tech Stack</h2>	 
+			<div class="skills-content">
+			<h3>HTML</h3>
+			<i class="fa-brands fa-html5 fa-3x"></i>
+			<h3>CSS</h3>
+			<i class="fa-brands fa-css3-alt fa-3x"></i>
+			<h3>JavaScript</h3>
+			<i class="fa-brands fa-js fa-3x"></i>
+			<h3>Java</h3>
+			<i class="fa-brands fa-java fa-3x"></i>
+			<h3>C++</h3>
+			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50"> <path d="M 43.910156 12.003906 L 27.070313 2.539063 C 25.792969 1.824219 24.207031 1.824219 22.929688 2.539063 L 6.089844 12.003906 C 4.800781 12.726563 4 14.082031 4 15.535156 L 4 34.464844 C 4 35.917969 4.800781 37.273438 6.089844 37.996094 L 22.929688 47.460938 C 23.570313 47.820313 24.285156 48 25 48 C 25.714844 48 26.429688 47.820313 27.070313 47.460938 L 43.910156 37.996094 C 45.199219 37.273438 46 35.917969 46 34.464844 L 46 15.535156 C 46 14.082031 45.199219 12.726563 43.910156 12.003906 Z M 25 37 C 18.382813 37 13 31.617188 13 25 C 13 18.382813 18.382813 13 25 13 C 28.78125 13 32.273438 14.753906 34.542969 17.742188 L 30.160156 20.277344 C 28.84375 18.835938 26.972656 18 25 18 C 21.140625 18 18 21.140625 18 25 C 18 28.859375 21.140625 32 25 32 C 26.972656 32 28.84375 31.164063 30.160156 29.722656 L 34.542969 32.257813 C 32.273438 35.246094 28.78125 37 25 37 Z M 37 26 L 35 26 L 35 28 L 33 28 L 33 26 L 31 26 L 31 24 L 33 24 L 33 22 L 35 22 L 35 24 L 37 24 Z M 44 26 L 42 26 L 42 28 L 40 28 L 40 26 L 38 26 L 38 24 L 40 24 L 40 22 L 42 22 L 42 24 L 44 24 Z"></path> </svg>
+			<h3>Python</h3>
+			<i class="fa-brands fa-python fa-3x"></i>
+			</div>
+			
+		</section>	
+
+
+				<!-- Two: Projects-->
 					<section id="two">
-						<h2>Recent Work</h2>
+						<h2>Projects</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/01.png" class="image fit thumb"><img src="images/thumbs/01.png" alt="" /></a>
@@ -51,11 +99,19 @@
 								<p>Technologies Used: Java, JavaFX</p>	
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.png" class="image fit thumb"><img src="images/thumbs/02.png" alt="" /></a>
-								<h3>Portfolio Website</h3>
+								<a href="images/fulls/03.png" class="image fit thumb"><img src="images/thumbs/03.png" alt="" /></a>
+								<h3>Developer Portfolio</h3>
 								<p>A website dedicated to showcase my achievements and projects.</p>
 								<p>Technologies used: HTML, CSS, JavaScript</p>
 							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/02.png" class="image fit thumb"><img src="images/thumbs/02.png" alt="" /></a>
+								<h3>Inventory Management System</h3>
+								<p>A dynamic web application designed for efficient inventory management, enabling users to seamlessly add, remove, and track items in real-time. Built to ensure streamlined operations and enhanced organization for businesses of all sizes.</p>
+								<p>Technologies used: Firebase, React, Next.JS, and Material UI</p>
+							</article>
+
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
 								<h3>Social Advocacy Site</h3>
@@ -77,7 +133,7 @@
 						</ul>
 					</section>
  
-				<!-- Three -->
+				<!-- Three: Contact Me -->
 					<section id="three">
 						<h2>Get In Touch</h2>
 						<p>Feel free to reach out if you'd like to collaborate or have any questions!</p>
@@ -106,7 +162,7 @@
 									</li>
 									<li>
 										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										347-806-6090
+										(516) 495-3590
 									</li>
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
@@ -118,7 +174,12 @@
 					</section>
 
 
-			</div>
+					
+
+
+	
+	
+
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -142,5 +203,18 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+				function showSidebar() { 
+					const sidebar = document.querySelector('#sidebar')
+					sidebar.style.display= 'flex'
+				}
+			</script>
+
+			<script> 
+				function closeSidebar() { 
+					const sidebar = document.querySelector('#sidebar')
+					sidebar.style.display= 'none'
+				}
+			</script>
 	</body>
 </html>
